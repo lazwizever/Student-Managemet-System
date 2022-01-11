@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="createAccountContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="764.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateAccountFormController">
+   <children>
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#273c75" height="571.0" layoutX="-47.0" layoutY="-5.0" stroke="#7f8fa6" strokeType="INSIDE" strokeWidth="0.0" width="408.0" />
+      <JFXButton fx:id="btnCreateAccount" buttonType="RAISED" focusTraversable="false" layoutX="25.0" layoutY="483.0" onAction="#createAccountOnAction" prefHeight="39.0" prefWidth="294.0" style="-fx-background-color: #fbc531; -fx-background-radius: 50;" text="Create Account">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <PasswordField fx:id="txtPassword" focusTraversable="false" layoutX="26.0" layoutY="334.0" prefHeight="36.0" prefWidth="294.0" style="-fx-background-radius: 50;" />
+      <TextField fx:id="txtUserName" focusTraversable="false" layoutX="24.0" layoutY="258.0" prefHeight="36.0" prefWidth="294.0" style="-fx-background-radius: 50;" />
+      <ImageView fitHeight="235.0" fitWidth="395.0" layoutX="362.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Team.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="393.0" layoutY="46.0" prefHeight="45.0" prefWidth="334.0" text="Merry Kids International">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="93.0" prefHeight="45.0" prefWidth="246.0" text="Montissori School">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="14.0" layoutY="14.0" onAction="#backToAdminFormOnAction" prefHeight="50.0" prefWidth="60.0" style="-fx-border-color: #ffffff; -fx-border-width: 3; -fx-border-radius: 10;" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView disable="true" fitHeight="31.0" fitWidth="42.0" layoutX="27.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/home12345.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="504.0" layoutY="14.0" prefHeight="30.0" prefWidth="110.0" text="26-03-2000" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="645.0" layoutY="14.0" prefHeight="30.0" prefWidth="89.0" text="15:45PM" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTeacherName" focusTraversable="false" layoutX="24.0" layoutY="102.0" prefHeight="36.0" prefWidth="294.0" style="-fx-background-radius: 50;" />
+      <Label layoutX="24.0" layoutY="67.0" prefHeight="25.0" prefWidth="110.0" text=" Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="147.0" prefHeight="25.0" prefWidth="89.0" text="User Level" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="223.0" prefHeight="25.0" prefWidth="89.0" text="User Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="301.0" prefHeight="25.0" prefWidth="89.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbUserLevels" focusTraversable="false" layoutX="24.0" layoutY="180.0" prefHeight="31.0" prefWidth="294.0" style="-fx-background-radius: 50;" />
+      <TextField fx:id="txtConfirmPassword" focusTraversable="false" layoutX="24.0" layoutY="408.0" prefHeight="36.0" prefWidth="294.0" style="-fx-background-radius: 50;" />
+      <Label layoutX="24.0" layoutY="380.0" prefHeight="25.0" prefWidth="149.0" text="Confirm Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWaringMessageName" layoutX="68.0" layoutY="110.0" prefHeight="21.0" prefWidth="211.0" text="* Name Can't Be Empty" textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWaringMessageUserLevel" layoutX="66.0" layoutY="185.0" prefHeight="21.0" prefWidth="211.0" text="* User Level Can't Be Empty" textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWaringMessageUserName" layoutX="66.0" layoutY="266.0" prefHeight="21.0" prefWidth="211.0" text="* User Name Can't Be Empty" textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWaringMessagePassword" layoutX="68.0" layoutY="342.0" prefHeight="21.0" prefWidth="211.0" text="* Password Can't Be Empty" textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWaringMessageConfirmPassword" layoutX="68.0" layoutY="416.0" prefHeight="21.0" prefWidth="246.0" text="*Confirm Password Can't Be Empty" textFill="#ff1313" visible="false" />
+   </children>
+</AnchorPane>

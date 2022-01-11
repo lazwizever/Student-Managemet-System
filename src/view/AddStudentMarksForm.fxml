@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageMarksOnAction" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1059.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddStudentMarksFormController">
+   <children>
+      <Rectangle fill="#273c75" height="174.0" layoutX="-134.0" layoutY="-96.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="1197.0" />
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" focusTraversable="false" layoutX="20.0" layoutY="14.0" onAction="#backToClassTeacherFormOnAction" prefHeight="39.0" prefWidth="57.0" style="-fx-background-color: #273c75; -fx-border-color: #ffffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 3;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="31.0" fitWidth="42.0" layoutX="31.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/home12345.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" layoutX="942.0" layoutY="-2.0" prefHeight="38.0" prefWidth="117.0" text="26-03-2000" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="915.0" layoutY="29.0" prefHeight="47.0" prefWidth="148.0" text="16:45 PM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtStRegistrationNo" focusTraversable="false" labelFloat="true" layoutX="23.0" layoutY="120.0" prefHeight="31.0" prefWidth="228.0" promptText="Student Registration No" />
+      <JFXTextField fx:id="txtStudentName" focusTraversable="false" labelFloat="true" layoutX="423.0" layoutY="120.0" prefHeight="31.0" prefWidth="278.0" promptText="Student Name" />
+      <JFXButton fx:id="btnAddMark" buttonType="RAISED" disable="true" focusTraversable="false" layoutX="873.0" layoutY="187.0" onAction="#SaveMarksOnAction" prefHeight="39.0" prefWidth="157.0" style="-fx-background-color: #44bd32; -fx-background-radius: 20;" text="Add Mark" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtUpdateEnterMarks" focusTraversable="false" labelFloat="true" layoutX="423.0" layoutY="191.0" onMouseClicked="#clickEnterMarks" prefHeight="31.0" prefWidth="278.0" promptText="Enter Marks" />
+      <JFXComboBox fx:id="cmbSubjectType" focusTraversable="false" labelFloat="true" layoutX="27.0" layoutY="191.0" onAction="#cmbSetSubjectMark" prefHeight="31.0" prefWidth="278.0" promptText="Select Subject" />
+      <TableView fx:id="tblStudentMark" focusTraversable="false" layoutX="27.0" layoutY="242.0" prefHeight="465.0" prefWidth="1002.0">
+        <columns>
+          <TableColumn fx:id="colRegistrationNo" prefWidth="129.0" text="Registration No" />
+          <TableColumn fx:id="colStudentName" prefWidth="395.0" text="Student Name" />
+            <TableColumn fx:id="colGrade" prefWidth="173.0" text="Grade" />
+            <TableColumn fx:id="colDictation" prefWidth="191.0" text="Subject" />
+            <TableColumn fx:id="colGeneralEnglish" prefWidth="113.0" text="Mark" />
+        </columns>
+      </TableView>
+      <Label layoutX="194.0" layoutY="17.0" prefHeight="44.0" prefWidth="624.0" text="Merry Kids International Montissori School" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnMoveToSearchList" buttonType="RAISED" focusTraversable="false" layoutX="259.0" layoutY="117.0" onAction="#moveToSearhListOnAction" prefHeight="38.0" prefWidth="42.0" style="-fx-background-color: #487eb0;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="50.0" fitWidth="29.0" layoutX="266.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/PngItem_307511.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblWarningMessageEnterMarks" layoutX="23.0" layoutY="533.0" prefHeight="21.0" prefWidth="228.0" text="Label" textFill="#ff1313" visible="false" />
+   </children>
+</AnchorPane>

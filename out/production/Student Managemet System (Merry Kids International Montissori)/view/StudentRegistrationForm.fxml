@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="studentRegistrationFormContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="776.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentRegistrationFormController">
+   <children>
+      <Rectangle fill="#273c75" height="808.0" layoutX="-30.0" layoutY="-31.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1333.0" />
+      <Rectangle arcHeight="400.0" arcWidth="400.0" fill="WHITE" height="654.0" layoutX="-44.0" layoutY="67.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="1501.0" />
+      <Line endX="100.0" endY="13.0" layoutX="568.0" layoutY="96.0" startX="100.0" startY="585.0" strokeWidth="2.0" />
+      <Label layoutX="675.0" layoutY="112.0" prefHeight="32.0" prefWidth="178.0" text="Guardian Details">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Line endX="7.0" endY="28.0" layoutX="857.0" layoutY="87.0" startX="7.0" startY="53.0" strokeWidth="2.0" />
+      <Line endX="302.0" layoutX="950.0" layoutY="128.0" startX="-86.0" strokeWidth="2.0" />
+      <Label fx:id="lblParentNum" layoutX="1057.0" layoutY="162.0" prefHeight="30.0" prefWidth="128.0" text="Guardian Id :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblParentId" layoutX="1186.0" layoutY="162.0" prefHeight="30.0" prefWidth="60.0" text="P-001">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtParentName" focusTraversable="false" labelFloat="true" layoutX="691.0" layoutY="235.0" prefHeight="31.0" prefWidth="574.0" promptText=" Full Name" />
+      <ComboBox fx:id="cmbParentTitle" editable="true" focusTraversable="false" layoutX="962.0" layoutY="462.0" prefHeight="31.0" prefWidth="101.0" promptText="Title" />
+      <RadioButton fx:id="rdMale" focusTraversable="false" layoutX="1113.0" layoutY="470.0" mnemonicParsing="false" onAction="#rdBtnOnAction" text="Male" />
+      <RadioButton fx:id="rdFemale" focusTraversable="false" layoutX="1193.0" layoutY="470.0" mnemonicParsing="false" onAction="#rdFemaleOnAction" text="Female" />
+      <Label layoutX="1111.0" layoutY="434.0" prefHeight="21.0" prefWidth="68.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtParentJob" focusTraversable="false" labelFloat="true" layoutX="959.0" layoutY="380.0" prefHeight="31.0" prefWidth="303.0" promptText="Job" />
+      <JFXTextField fx:id="txtNIC" focusTraversable="false" labelFloat="true" layoutX="694.0" layoutY="380.0" prefHeight="31.0" prefWidth="234.0" promptText="NIC" />
+      <JFXTextField fx:id="txtParentAddress" focusTraversable="false" labelFloat="true" layoutX="691.0" layoutY="316.0" prefHeight="31.0" prefWidth="574.0" promptText="Address" />
+      <JFXTextField fx:id="txtEmail" focusTraversable="false" labelFloat="true" layoutX="700.0" layoutY="557.0" prefHeight="31.0" prefWidth="564.0" promptText="E-Mail" />
+      <JFXTextField fx:id="txtParentContactNo" focusTraversable="false" labelFloat="true" layoutX="697.0" layoutY="460.0" prefHeight="31.0" prefWidth="234.0" promptText="Contact No" />
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" focusTraversable="false" layoutX="988.0" layoutY="645.0" onAction="#deleteStudentOnAction" prefHeight="39.0" prefWidth="119.0" style="-fx-background-color: #eb3b5a;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnRegisterStudent" buttonType="RAISED" disable="true" focusTraversable="false" layoutX="1133.0" layoutY="645.0" onAction="#registerStudentOnAction" prefHeight="39.0" prefWidth="119.0" style="-fx-background-color: #44bd32;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblTime" layoutX="1142.0" layoutY="23.0" prefHeight="51.0" prefWidth="168.0" text="20:10 AM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="600.0" arcWidth="600.0" fill="WHITE" height="171.0" layoutX="-121.0" layoutY="156.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="107.0" />
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="203.0" layoutY="245.0" onAction="#moveToSearchForm" prefHeight="39.0" prefWidth="41.0" style="-fx-background-color: #718093;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblRegistrationNo" layoutX="575.0" layoutY="251.0" prefHeight="30.0" prefWidth="60.0" text="S-001">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentRegistration" layoutX="401.0" layoutY="251.0" prefHeight="30.0" prefWidth="168.0" text="Registration No :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdBtnAddNewStudent" focusTraversable="false" layoutX="203.0" layoutY="176.0" mnemonicParsing="false" onAction="#rdBtnAddNewStudentOnAction" text="Add New Student">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdBtnExistingStudent" focusTraversable="false" layoutX="384.0" layoutY="176.0" mnemonicParsing="false" onAction="#isSelectExistingStudentOnAction" text="Existing Student">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <ImageView disable="true" fitHeight="32.0" fitWidth="41.0" layoutX="26.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/home12345.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtContactNo" focusTraversable="false" labelFloat="true" layoutX="35.0" layoutY="457.0" prefHeight="31.0" prefWidth="234.0" promptText="Contact No" />
+      <JFXTextField fx:id="txtAddress" focusTraversable="false" labelFloat="true" layoutX="33.0" layoutY="380.0" prefHeight="31.0" prefWidth="598.0" promptText="Address" />
+      <ComboBox fx:id="cmbGrade" editable="true" focusTraversable="false" layoutX="402.0" layoutY="461.0" prefHeight="31.0" prefWidth="234.0" />
+      <Label layoutX="397.0" layoutY="429.0" prefHeight="21.0" prefWidth="51.0" text="Grade">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="535.0" prefHeight="21.0" prefWidth="68.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdBtnMale" focusTraversable="false" layoutX="398.0" layoutY="572.0" mnemonicParsing="false" onAction="#rdBtnMaleOnAction" text="Male" />
+      <RadioButton fx:id="rdBtnFemale" focusTraversable="false" layoutX="478.0" layoutY="572.0" mnemonicParsing="false" onAction="#rdBtnFemaleOnAction" text="Female" />
+      <ComboBox fx:id="cmbDay" editable="true" focusTraversable="false" layoutX="36.0" layoutY="562.0" prefHeight="31.0" prefWidth="75.0" promptText="DD" />
+      <ComboBox fx:id="cmbMonth" editable="true" focusTraversable="false" layoutX="128.0" layoutY="562.0" prefHeight="31.0" prefWidth="75.0" promptText="MM" />
+      <ComboBox fx:id="cmbYear" editable="true" focusTraversable="false" layoutX="213.0" layoutY="562.0" prefHeight="31.0" prefWidth="120.0" promptText="YYYY" />
+      <Label layoutX="36.0" layoutY="531.0" prefHeight="21.0" prefWidth="101.0" text="Date Of Birth" />
+      <JFXTextField fx:id="txtStudentName" focusTraversable="false" labelFloat="true" layoutX="33.0" layoutY="312.0" prefHeight="31.0" prefWidth="598.0" promptText=" Full Name" />
+      <Label layoutX="35.0" layoutY="112.0" prefHeight="32.0" prefWidth="168.0" text="Student Details">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Line endX="7.0" endY="28.0" layoutX="196.0" layoutY="88.0" startX="7.0" startY="53.0" strokeWidth="2.0" />
+      <Line endX="322.0" endY="1.52587890625E-5" layoutX="305.0" layoutY="129.0" startX="-100.0" strokeWidth="2.0" />
+      <ImageView disable="true" fitHeight="27.0" fitWidth="41.0" layoutX="210.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/PngItem_307511.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtRegistrationNo" focusTraversable="false" labelFloat="true" layoutX="36.0" layoutY="250.0" prefHeight="31.0" prefWidth="143.0" promptText="Registration No" />
+      <Separator layoutX="1086.0" layoutY="434.0" orientation="VERTICAL" prefHeight="73.0" prefWidth="2.0" />
+      <Label fx:id="lblDate" layoutX="1167.0" layoutY="-5.0" prefHeight="38.0" prefWidth="119.0" text="2000-03-26" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnHome" buttonType="RAISED" focusTraversable="false" layoutX="14.0" layoutY="14.0" onAction="#backToAdminForm" prefHeight="50.0" prefWidth="60.0" style="-fx-border-color: #ffffff; -fx-border-width: 3; -fx-border-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextField fx:id="txtParentId" focusTraversable="false" labelFloat="true" layoutX="694.0" layoutY="171.0" prefHeight="31.0" prefWidth="247.0" promptText="Guardian Id" />
+      <Label fx:id="lblWarningMessage" layoutX="398.0" layoutY="318.0" prefHeight="21.0" prefWidth="222.0" text="* " textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWarningMessageCmb" layoutX="44.0" layoutY="460.0" prefHeight="21.0" prefWidth="222.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWarngMessageContactNo" layoutX="399.0" layoutY="531.0" prefHeight="21.0" prefWidth="234.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="warningMessageParentName" layoutX="793.0" layoutY="240.0" prefHeight="21.0" prefWidth="222.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="warningMessageNIC" layoutX="1051.0" layoutY="310.0" prefHeight="21.0" prefWidth="206.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="warningMessageParentContactNo" layoutX="713.0" layoutY="513.0" prefHeight="21.0" prefWidth="222.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="warningMessageParentJob" layoutX="1024.0" layoutY="477.0" prefHeight="21.0" prefWidth="222.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="warningMessageParentGender" layoutX="686.0" layoutY="355.0" prefHeight="21.0" prefWidth="192.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWarningMessageParentTitle" layoutX="1116.0" layoutY="268.0" prefHeight="21.0" prefWidth="178.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWarningMessageGrade" layoutX="405.0" layoutY="460.0" prefHeight="21.0" prefWidth="222.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWarningMessageStudentGender" layoutX="55.0" layoutY="524.0" prefHeight="21.0" prefWidth="222.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label fx:id="lblWarningMessageEmail" layoutX="793.0" layoutY="567.0" prefHeight="21.0" prefWidth="222.0" text="ll" textFill="#ff1313" visible="false" />
+      <Label layoutX="332.0" layoutY="11.0" prefHeight="44.0" prefWidth="650.0" text="Merry Kids International Montissori School" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="33.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="clearTxtFields" buttonType="RAISED" focusTraversable="false" layoutX="845.0" layoutY="646.0" onAction="#clearTxtFieldsOnAction" prefHeight="38.0" prefWidth="119.0" style="-fx-background-color: #576574;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

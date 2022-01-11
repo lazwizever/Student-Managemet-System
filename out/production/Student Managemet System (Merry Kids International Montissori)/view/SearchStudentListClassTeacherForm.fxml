@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="stuDentDetailsContext" prefHeight="484.0" prefWidth="624.0" style="-fx-background-color: #273c75;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchStudentListClassTeacherFormController">
+   <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="411.0" layoutX="22.0" layoutY="49.0" stroke="#273c75" strokeType="INSIDE" strokeWidth="0.0" width="581.0" />
+      <JFXComboBox fx:id="cmbSearchType" focusColor="BLACK" focusTraversable="false" layoutX="46.0" layoutY="68.0" onAction="#visibleSearchBar" prefHeight="31.0" prefWidth="165.0" promptText="Select Search Type" unFocusColor="BLACK" />
+      <TextField fx:id="txtSearchBar" focusTraversable="false" layoutX="266.0" layoutY="68.0" prefHeight="31.0" prefWidth="262.0" promptText="Search here">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblStudent" layoutX="47.0" layoutY="132.0" prefHeight="308.0" prefWidth="532.0">
+         <columns>
+            <TableColumn fx:id="colRegistrationNo" prefWidth="119.0" text="Registration No" />
+            <TableColumn fx:id="colStName" prefWidth="412.0" text="Student Name" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnSearch" focusTraversable="false" layoutX="528.0" layoutY="68.0" onAction="#searchStudentOnAction" prefHeight="31.0" prefWidth="51.0" style="-fx-background-color: #718093;" />
+      <ImageView disable="true" fitHeight="31.0" fitWidth="26.0" layoutX="541.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/PngItem_307511.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="568.0" layoutY="3.0" onAction="#backToSearchStudentOnAction" prefHeight="42.0" prefWidth="51.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="31.0" fitWidth="33.0" layoutX="579.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icon-png.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

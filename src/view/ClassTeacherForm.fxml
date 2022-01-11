@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="classTeacherFormContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="837.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClassTeacherFormController">
+   <children>
+      <Rectangle fill="#273c75" height="564.0" layoutX="-10.0" layoutY="-15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="853.0" />
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="327.0" layoutY="141.0" onAction="#moveToAddStudentMarkOnAction" prefHeight="86.0" prefWidth="469.0" style="-fx-background-color: #718093; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-width: 4; -fx-border-color: #ffffff;" text="Manage Student Marks" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="303.0" layoutY="267.0" onAction="#moveToSearchStudent" prefHeight="86.0" prefWidth="449.0" style="-fx-background-color: #718093 #718093; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-width: 4; -fx-border-color: #ffffff;" text="Search Student" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="54.0" fitWidth="47.0" layoutX="669.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/PngItem_307511.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="54.0" fitWidth="74.0" layoutX="725.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/clipart3051769.png" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="26.0" layoutY="180.0" radius="363.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="57.0" layoutY="116.0" text="WELCOME">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="14.0" prefHeight="38.0" prefWidth="255.0" text="Merry Kids International">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="73.0" layoutY="396.0" prefHeight="35.0" prefWidth="160.0" text="26-03-2000">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="38.0" layoutY="425.0" prefHeight="66.0" prefWidth="210.0" text="20:45 PM">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="46.0" prefHeight="38.0" prefWidth="196.0" text="Montissori School">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="closeBtn" buttonType="RAISED" focusTraversable="false" layoutX="786.0" layoutY="6.0" onAction="#closeBtnOnAction" prefHeight="47.0" prefWidth="47.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView disable="true" fitHeight="31.0" fitWidth="38.0" layoutX="796.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icon-png.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="78.0" layoutY="321.0" onAction="#backToLoginForm" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #273c75; -fx-background-radius: 50;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblDate1" layoutX="77.0" layoutY="277.0" prefHeight="35.0" prefWidth="130.0" text="Class Teacher">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Circle fill="#273c75" layoutX="143.0" layoutY="220.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="108.0" fitWidth="85.0" layoutX="101.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/UserPic.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

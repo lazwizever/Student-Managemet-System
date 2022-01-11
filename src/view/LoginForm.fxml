@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="512.0" prefWidth="891.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#273c75" height="524.0" layoutX="-25.0" layoutY="-5.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="636.0" />
+      <Circle fill="#273c75" layoutX="172.0" layoutY="157.0" radius="58.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0" />
+      <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="56.0" layoutY="388.0" onAction="#loginOnAction" prefHeight="31.0" prefWidth="232.0" style="-fx-background-color: #273c75; -fx-border-color: #ffffff; -fx-border-width: 2;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <PasswordField fx:id="txtPassword" focusTraversable="false" layoutX="54.0" layoutY="291.0" prefHeight="31.0" prefWidth="232.0" promptText="Enter Password" />
+      <TextField fx:id="txtUserName" focusTraversable="false" layoutX="56.0" layoutY="243.0" prefHeight="31.0" prefWidth="232.0" promptText="Enter User Name" />
+      <Label layoutX="75.0" layoutY="445.0" prefHeight="21.0" prefWidth="187.0" text="Forgot Password ? Cick here" textFill="WHITE" />
+      <Line endX="35.0" layoutX="231.0" layoutY="466.0" startX="-2.0" stroke="WHITE" />
+      <Label layoutX="302.0" layoutY="495.0" prefHeight="21.0" prefWidth="213.0" text="Merry Kids International Montissori" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Circle fill="WHITE" layoutX="603.0" layoutY="323.0" radius="196.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="200.0" arcWidth="100.0" fill="#273c75" height="148.0" layoutX="388.0" layoutY="-21.0" stroke="#273c75" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
+      <Label layoutX="56.0" prefHeight="75.0" prefWidth="362.0" text="Good To See You..." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="253.0" fitWidth="291.0" layoutX="568.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/merrykids.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="83.0" fitWidth="79.0" layoutX="135.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/UserPic.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="477.0" layoutY="190.0" prefHeight="45.0" prefWidth="392.0" text="Merry Kids International">
+         <font>
+            <Font name="Bell MT Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="540.0" layoutY="235.0" prefHeight="45.0" prefWidth="283.0" text="Montissori School">
+         <font>
+            <Font name="Bell MT Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="756.0" layoutY="55.0" prefHeight="30.0" prefWidth="116.0" text="2000-03-26">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="726.0" layoutY="85.0" prefHeight="58.0" prefWidth="146.0" text="08:30 PM">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkBoxShowPassword" focusTraversable="false" layoutX="101.0" layoutY="363.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="136.0" text="Show Password" textFill="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="13.0" layoutX="286.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/nice.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblInvalidPassword" layoutX="107.0" layoutY="331.0" prefHeight="21.0" prefWidth="123.0" style="-fx-background-color: #ffffff;" text="*Invalid Password" textFill="#eb0000" visible="false" />
+      <JFXButton fx:id="closeBtn" buttonType="RAISED" focusTraversable="false" layoutX="850.0" layoutY="7.0" onAction="#closeBtnOnAction" prefHeight="31.0" prefWidth="38.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView disable="true" fitHeight="31.0" fitWidth="30.0" layoutX="854.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icon-png.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtShowPassword" layoutX="54.0" layoutY="291.0" prefHeight="31.0" prefWidth="232.0" visible="false" />
+   </children>
+</AnchorPane>
